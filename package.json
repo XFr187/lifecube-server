@@ -1,11 +1,7 @@
 {
   "name": "lifecube-server",
   "version": "1.0.0",
-  "description": "生活立方后端API - 连接TiDB Cloud",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
+  "description": "生活立方后端API - Vercel Serverless + TiDB",
   "dependencies": {
     "mysql2": "^3.9.0"
   }
