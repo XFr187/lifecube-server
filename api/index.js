@@ -97,6 +97,17 @@ async function addScore(userId, delta, reason) {
 }
 
 async function handleRequest(req, res, method, path, query, body) {
+  // ---------- 健康检查 / 根路径 ----------
+  if (method === 'GET' && (path === '/' || path === '/api' || path === '/api/' || path === '/api/health')) {
+    return sendJson(res, 200, {
+      success: true,
+      message: '生活立方后端服务运行中 (LifeCube API)',
+      version: '1.0.0',
+      time: nowStr(),
+      endpoints: ['/login', '/register', '/notices', '/polls', '/moments', '/checkin', '/dashboard']
+    });
+  }
+
   const p = getPool();
 
   // ---------- 登录 ----------
