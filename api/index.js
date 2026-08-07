@@ -6,7 +6,7 @@ const DB_CONFIG = {
   host: 'gateway03.us-west-2.prod.aws.tidbcloud.com',
   port: 4000,
   user: '2X73k3Wke67GQP9.root',
-  password: 'OYQlIPy6dXXuDdiH',
+  password: 'BKPH2NUV67E6FES7VGAJCWF4INOPEJT6',
   database: 'lifecube',
   ssl: { rejectUnauthorized: true },
   connectionLimit: 5,
